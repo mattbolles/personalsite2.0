@@ -47,11 +47,11 @@ const Layout = ({ children }) => {
        
         <div className = 'footer-box'
         style = {{
-          padding: `.0875rem 1.0875rem 1.45rem`
+          padding: `.0875rem 1.0875rem 1.45rem 0rem`
         }}>
         <footer
           style={{
-            marginTop: `2rem`,
+            marginTop: `1.25rem`,
             textAlign: 'center'
           }}
         >

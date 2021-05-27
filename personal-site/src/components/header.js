@@ -34,7 +34,7 @@ const Header = ({ siteTitle, menuLinks }) => (
       justifyContent: 'center' 
     }}>
           <nav>
-            <ul style={{display: "flex", flex: 1, flexDirection: "row", justifyContent: 'right', marginLeft: '330%', marginTop: '10%' }}>
+            <ul style={{display: "flex", flex: 1, flexDirection: "row", marginLeft: '400%', marginTop: '15%' }}>
               {menuLinks.map(link => (
                 <li
                   key={link.name}

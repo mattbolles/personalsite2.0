@@ -8,12 +8,12 @@ module.exports = {
         name: 'Contact',
         link: '/contact'
       },
-      {
+      /* {
         name: 'Projects',
         link: '/projects'
-      },
+      }, */
       {
-        name: 'Github',
+        name: 'GitHub',
         link: 'http://github.com/mattbolles'
       }
 
