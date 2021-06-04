@@ -40,9 +40,11 @@ const Layout = ({ children }) => {
           
         }}
       >
-        <div style = {{
-          padding: `0 1.0875rem 1.45rem`
-        }}> <main>{children}</main>
+        <div className = "fade-in-2" style = {{
+          padding: `8rem 1.0875rem 1.45rem`
+        }}>
+           
+        <main>{children}</main>
         </div>
        
         <div className = 'footer-box'
@@ -53,17 +55,10 @@ const Layout = ({ children }) => {
           style={{
             marginTop: `1.25rem`,
             textAlign: 'center'
-          }}
-        >
-          <Link
-          to="mailto:matt@mattrbolles.com"
-          style={{
-            color: `#f9e8ff`,
-            textDecoration: `underline`,
-          }}
-        >
-          Email Me
-        </Link>
+          }}>
+          <div className="footer-link">
+          <a href="mailto:matt@mattrbolles.com">Email Me</a>
+          </div>
         </footer>
         </div>
       </div>

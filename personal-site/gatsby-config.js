@@ -5,19 +5,17 @@ module.exports = {
     author: `Matt Bolles`,
     menuLinks: [
       {
-        name: 'Contact',
-        link: '/contact'
+        name: 'About',
+        link: '#about'
       },
-      /* {
-        name: 'Projects',
-        link: '/projects'
-      }, */
       {
-        name: 'GitHub',
-        link: 'http://github.com/mattbolles'
+        name: 'Projects',
+        link: '#projects'
+      },
+      {
+        name: 'Contact',
+        link: '#contact'
       }
-
-
     ]
   },
   plugins: [

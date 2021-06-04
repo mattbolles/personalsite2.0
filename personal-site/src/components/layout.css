@@ -105,6 +105,51 @@ h1 {
   text-rendering: optimizeLegibility;
   font-size: 4.25rem;
   line-height: 1.1;
+  animation: fadeIn linear 1s;
+  -webkit-animation: fadeIn linear 1s;
+  -moz-animation: fadeIn linear 1s;
+  -o-animation: fadeIn linear 1s;
+  -ms-animation: fadeIn linear 1s;
+}
+
+.fade-in-1 {
+  animation: fadeIn linear 1s;
+  -webkit-animation: fadeIn linear 1s;
+  -moz-animation: fadeIn linear 1s;
+  -o-animation: fadeIn linear 1s;
+  -ms-animation: fadeIn linear 1s;
+}
+.fade-in-2 {
+  animation: fadeIn linear 1.2s;
+  -webkit-animation: fadeIn linear 1.2s;
+  -moz-animation: fadeIn linear 1.2s;
+  -o-animation: fadeIn linear 1.2s;
+  -ms-animation: fadeIn linear 1.2s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
 
 .gradient-text {
@@ -662,5 +707,56 @@ pre tt:after {
     #000    
     no-repeat; 
   background-size:100% 5px ;
+}
+
+.gradient-line {
+  padding-top:5px;
+  background:
+    linear-gradient(
+      90deg,#73ceff, #b948e8
+    )
+    left 
+    top
+    #000    
+    no-repeat; 
+  background-size:100% 5px ;
+}
+
+
+a:link {
+  color: #f9e8ff;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: overline underline;
+  background-color: #f9e8ff;
+  color: black;
+}
+
+.contact-links a:visited:hover {
+  text-decoration: overline underline;
+  background-color: #f9e8ff;
+  color: black;
+}
+
+a:visited {
+  color: #f9e8ff;
+  text-decoration: none;
+}
+
+.nav-bar-link a:hover {
+  background-color: #f9e8ff;
+  color: black;
+}
+
+.footer-link a:hover {
+  background-color: #f9e8ff;
+  color: black
+}
+
+.footer-link a:visited:hover {
+  background-color: #f9e8ff;
+  color: black
 }
 
