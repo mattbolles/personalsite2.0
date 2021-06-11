@@ -30,7 +30,6 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata?.title} />
       <div
         style={{
           margin: `auto`,
@@ -41,7 +40,7 @@ const Layout = ({ children }) => {
         }}
       >
         <div className = "fade-in-2" style = {{
-          padding: `8rem 1.0875rem 1.45rem`
+          padding: `1rem`
         }}>
            
         <main>{children}</main>
@@ -54,10 +53,11 @@ const Layout = ({ children }) => {
         <footer
           style={{
             marginTop: `1.25rem`,
-            textAlign: 'center'
+            textAlign: 'center',
+            color: '#a6a6a6'
           }}>
-          <div className="footer-link">
-          <a href="mailto:matt@mattrbolles.com">Email Me</a>
+          <div className="footer-copyright">Copyright 2021 Matt Bolles.
+          Made in San Francisco, California.
           </div>
         </footer>
         </div>
