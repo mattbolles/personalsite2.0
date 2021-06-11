@@ -774,7 +774,11 @@ a:visited {
   color: black
 }
 
+.contact-link-buttons {
+  display: flex;
+  justify-content: center;
+}
 .contact-link-button-individual {
-  margin: 1rem
+  padding: 1rem;
 }
 
