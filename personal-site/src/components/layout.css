@@ -162,7 +162,6 @@ h1 {
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  margin: 0 auto;
 }
 
 .site-logo {
@@ -777,8 +776,34 @@ a:visited {
 .contact-link-buttons {
   display: flex;
   justify-content: center;
+  margin-bottom: 1rem;
 }
 .contact-link-button-individual {
   padding: 1rem;
 }
 
+.nav-bar {
+  padding-bottom:5px;
+  background:
+    linear-gradient(
+      90deg,#73ceff, #b948e8
+    )
+    left 
+    bottom
+    #000    
+    no-repeat; 
+  background-size:100% 5px ;
+}
+
+.section-heading {
+  padding: 1rem 1rem 0 1rem;
+  display: flex;
+  justify-content: left;
+  margin-bottom: -1rem
+}
+
+.about-me-text {
+  margin: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}

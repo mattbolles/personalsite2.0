@@ -40,11 +40,11 @@ const Layout = ({ children }) => {
         }}
       >
         <div className = "fade-in-2" style = {{
-          padding: `1rem`
+          
         }}>
            
         <main>{children}</main>
-        </div>
+        
        
         <div className = 'footer-box'
         style = {{
@@ -54,13 +54,15 @@ const Layout = ({ children }) => {
           style={{
             marginTop: `1.25rem`,
             textAlign: 'center',
-            color: '#a6a6a6'
+            color: '#a6a6a6',
+            fontSize: '.8em'
           }}>
           <div className="footer-copyright">Copyright 2021 Matt Bolles.
           Made in San Francisco, California.
           </div>
         </footer>
         </div>
+      </div>
       </div>
     </>
   )
