@@ -5,12 +5,13 @@ import Title from "../components/Title"
 import AboutMe from "../components/AboutMe"
 import Education from "../components/Education"
 import Intro from "../components/Intro"
+import NavBar from "../components/NavBar"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Matt Bolles" />
+    <NavBar />
     <Intro />
-    <Title />
     <AboutMe />
     <Education />
   </Layout>
