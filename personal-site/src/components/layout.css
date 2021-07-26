@@ -358,7 +358,7 @@ h2 {
 h3 {
   margin-left: 0;
   margin-right: 0;
-  margin-top: 0.5em;
+  margin-top: 0;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
@@ -370,7 +370,7 @@ h3 {
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
   line-height: 1.1;
-  text-align: center;
+  
 }
 h4 {
   margin-left: 0;
@@ -799,11 +799,26 @@ a:visited {
   padding: 1rem 1rem 0 1rem;
   display: flex;
   justify-content: left;
-  margin-bottom: -1rem
+  margin-bottom: 0rem
 }
 
-.about-me-text {
+.section-text {
   margin: auto;
   padding-left: 5rem;
   padding-right: 5rem;
+}
+
+.degree-details {
+  display: flex;
+}
+
+.degree-details-icon {
+  max-width: 7.5vw;
+  flex: .2;
+  margin-bottom: 2%;
+}
+
+.degree-details-text {
+  flex: .8;
+  padding-left: 2rem;
 }

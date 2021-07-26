@@ -9,29 +9,14 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
-
-import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-  query SiteQuery {
-    site {
-      siteMetadata {
-        title
-        menuLinks {
-          name
-          link
-        }
-      }
-    }
-  }
-  `)
 
   return (
     <>
       <div
-        style={{
+        style={{ 
           margin: `auto`,
           padding: `0`,
           backgroundColor: '#000000',
