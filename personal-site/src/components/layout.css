@@ -121,11 +121,11 @@ h1 {
   -ms-animation: fadeIn linear 1s;
 }
 .fade-in-2 {
-  animation: fadeIn linear 1.2s;
-  -webkit-animation: fadeIn linear 1.2s;
-  -moz-animation: fadeIn linear 1.2s;
-  -o-animation: fadeIn linear 1.2s;
-  -ms-animation: fadeIn linear 1.2s;
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+  -moz-animation: fadeIn linear 2s;
+  -o-animation: fadeIn linear 2;
+  -ms-animation: fadeIn linear 2s;
 }
 
 @keyframes fadeIn {
@@ -821,4 +821,152 @@ a:visited {
 .degree-details-text {
   flex: .8;
   padding-left: 2rem;
+}
+
+.site-intro {
+  height: 100vh;
+}
+
+.site-intro-text {
+  text-align: center;
+  padding-top: 40vh;
+}
+
+.site-intro-animation {
+  position: absolute;
+  top: 60%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  height: 160px;
+  width: 100%;
+  overflow: hidden;
+  
+  font-family: 'Inconsolata', monospace;
+  font-size: 35px;
+  line-height: 40px;
+  color: #ecf0f1;
+}
+
+.site-intro-animation-container {
+    font-weight: 600;
+    overflow: hidden;
+    height: 40px;
+    padding: 0 40px;
+}
+
+
+.site-intro-animation-container:before {
+      content: 'matt:~';
+      left: 0;
+}
+
+.site-intro-animation-container:after {
+      content: '';
+      position: absolute;
+      right: 0;
+    }
+
+    .site-intro-animation-container:after, .site-intro-animation-container:before {
+      position: absolute;
+      top: 0;
+      font-size: 42px;
+      line-height: 40px;
+      
+      -webkit-animation-name: terminal;
+      -webkit-animation-duration: 2s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+      animation-name: terminal;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    .site-intro-animation-container-text {
+      display: inline;
+      float: left;
+      padding-left: 120px;
+      margin: 0;
+    }
+
+    .site-intro-animation-container-list {
+      margin-top: 0;
+      padding-left: 175px;
+      text-align: left;
+      list-style: none;
+      
+      -webkit-animation-name: change;
+      -webkit-animation-duration: 12s;
+      -webkit-animation-iteration-count: infinite;
+      animation-name: change;
+      animation-duration: 12s;
+      animation-iteration-count: infinite;
+    }
+
+    .site-intro-animation-container-list-item {
+        line-height:40px;
+        margin:0;
+    }
+
+@-webkit-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-webkit-keyframes terminal {
+  from {color: #73ceff;}
+  to {color: #b948e8;}
+}
+
+@-webkit-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,0,0);}
+}
+
+@-o-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-o-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,0,0);}
+}
+
+@-moz-keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-moz-keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,0,0);}
+}
+
+@keyframes opacity {
+  0%, 100% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@keyframes terminal {
+  from {color: #73ceff;}
+  to {color: #b948e8;}
+  
+}
+
+@keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,0,0);}
 }

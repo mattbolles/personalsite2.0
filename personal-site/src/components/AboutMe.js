@@ -8,9 +8,7 @@ const AboutMe = () => {
     <section id="about-me">
         <SectionHeading title = "About Me" icon = {MdPerson}/>
         <div className = "gradient-text">
-          <div className = "intro-text">
             <h3 style = {{textAlign: 'center'}}>Hi, My name is Matt. Good to meet you!</h3>
-          </div>
         </div>
         <div className = "section-text">
             <p>I just finished my degree, and am eager to get out into the world!</p>
