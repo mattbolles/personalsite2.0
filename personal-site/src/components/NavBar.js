@@ -51,17 +51,17 @@ const setEmailColor = (bgColor, fgColor) => {
                     <div className = "contact-link-button-individual" 
                     onMouseEnter={() => setGitHubColor("#73ceff", "#b948e8")}
                     onMouseOut={() => {setGitHubColor("#ffffff", "#000000")}}>
-                        <SocialIcon url="http://github.com/mattbolles" bgColor = {gitHubBGColor} fgColor = {gitHubFGColor}/>
+                        <SocialIcon url="http://github.com/mattbolles" bgColor = {gitHubBGColor} fgColor = {gitHubFGColor} style={{height: 40, width: 40}}/>
                     </div>
                     <div className = "contact-link-button-individual" 
                     onMouseEnter={() => setLinkedInColor("#73ceff", "#b948e8")}
                     onMouseOut={() => {setLinkedInColor("#ffffff", "#000000")}}>
-                        <SocialIcon url="https://linkedin.com/in/mattrbolles/" bgColor = {linkedInBGColor} fgColor = {linkedInFGColor}/>
+                        <SocialIcon url="https://linkedin.com/in/mattrbolles/" bgColor = {linkedInBGColor} fgColor = {linkedInFGColor} style={{height: 40, width: 40}}/>
                     </div>
                     <div className = "contact-link-button-individual" 
                     onMouseEnter={() => setEmailColor("#73ceff", "#b948e8")}
                     onMouseOut={() => {setEmailColor("#ffffff", "#000000")}}>
-                        <SocialIcon url="mailto:matt@mattrbolles.com" bgColor = {emailBGColor} fgColor = {emailFGColor}/>
+                        <SocialIcon url="mailto:matt@mattrbolles.com" bgColor = {emailBGColor} fgColor = {emailFGColor} style={{height: 40, width: 40}}/>
                     </div>
                 </div>
         </div>
