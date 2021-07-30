@@ -33,8 +33,7 @@ const Education = () => {
                 </div>
             </div>
         </div>
-        
-        
+        <div className = "gradient-line"></div>
     </section>
   );
 };

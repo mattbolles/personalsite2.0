@@ -16,8 +16,7 @@ const AboutMe = () => {
             <p>I am familiar with Python, Java, HTML/CSS, JavaScript, React, and NodeJS, and am always seeking to expand my knowledge and learn new things. Feel free to contact me about any software development opportunities.</p>
             <p>In my free time I enjoy making music, exploring the world, meeting new people, and enjoying every experience I can.</p>
         </div>
-        <div className = "gradient-line">
-        </div>
+        <div className = "gradient-line"></div>
     </section>
   );
 };

@@ -16,7 +16,16 @@ module.exports = {
         name: 'Contact',
         link: '#contact'
       }
-    ]
+    ],
+    projectData:[
+      {
+        name: "Test Project",
+        description: "Test Project Description",
+        link: "http://github.com/mattbolles",
+        image: "../images/projects/testproject.png",
+        technologies: "React, Test, Cool"
+      }
+  ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
