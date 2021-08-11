@@ -10,7 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  background-color: #000000;
+  background-color: #1c1c1c;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: normal;
@@ -643,7 +643,7 @@ pre tt:after {
     )
     left 
     bottom
-    #000    
+    #1c1c1c   
     no-repeat; 
   background-size:100% 5px ;
 }

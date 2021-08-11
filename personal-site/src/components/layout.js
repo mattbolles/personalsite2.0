@@ -19,8 +19,8 @@ const Layout = ({ children }) => {
         style={{ 
           margin: `auto`,
           padding: `0`,
-          backgroundColor: '#000000',
-          color: `#FFFFFF`
+          backgroundColor: '#1c1c1c',
+          color: `#e8e8e8`
           
         }}
       >
@@ -33,10 +33,12 @@ const Layout = ({ children }) => {
        
         <div className = 'footer-box'
         style = {{
-          padding: `.0875rem 1.0875rem 1.45rem 0rem`
+          padding: `.0875rem 1.0875rem 1.45rem 0rem`,
+          backgroundColor: '#1c1c1c'
         }}>
         <footer
           style={{
+            backgroundColor: '#1c1c1c',
             marginTop: `1.25rem`,
             textAlign: 'center',
             color: '#a6a6a6',
