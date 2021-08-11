@@ -28,25 +28,6 @@ const Projects = () => {
   }
 `);
  
-// TODO: Get the query working and keep projects in projects.json folder. Currently, a bug is preventing correct query loading.
-var projects = [
-  {
-  "name": "Test Project 2",
-  "description": "Test Project Description 2",
-  "link": "http://github.com/mattbolles",
-  "image": "../images/site-logo.png",
-  "technologies": "React, Test, Cool"
-  },
-  {"name": "Test Project",
-  "description": "Test Project Description",
-  "link": "http://github.com/mattbolles",
-  "image": "../images/site-logo.png",
-  "technologies": "React, Test, Cool"
-  },
-
-];
-
-
   return (
     <section id="projects">
         <SectionHeading title = "Projects" icon = {MdDevices}/>
