@@ -10,7 +10,7 @@
     "name": "Test Project 2",
     "description": "Test Project Description 2",
     "link": "http://github.com/mattbolles",
-    "image": "../images/projects/test.jpg",
+    "image": "../images/projects/test2.png",
     "technologies": "React, Test, Cool"
   }
 ] 

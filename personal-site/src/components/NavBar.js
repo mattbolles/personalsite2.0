@@ -20,19 +20,19 @@ const NavBar = () => {
 
 // change color of social media buttons when user hovers over
 const [gitHubBGColor, setGitHubBGColor] = useState("#ffffff")
-const [gitHubFGColor, setGitHubFGColor] = useState("#000000")
+const [gitHubFGColor, setGitHubFGColor] = useState("#1c1c1c")
 const setGitHubColor = (bgColor, fgColor) => {
     setGitHubBGColor(bgColor);
     setGitHubFGColor(fgColor);
 }
 const [linkedInBGColor, setLinkedInBGColor] = useState("#ffffff")
-const [linkedInFGColor, setLinkedInFGColor] = useState("#000000")
+const [linkedInFGColor, setLinkedInFGColor] = useState("#1c1c1c")
 const setLinkedInColor = (bgColor, fgColor) => {
     setLinkedInBGColor(bgColor);
     setLinkedInFGColor(fgColor);
 }
 const [emailBGColor, setEmailBGColor] = useState("#ffffff")
-const [emailFGColor, setEmailFGColor] = useState("#000000")
+const [emailFGColor, setEmailFGColor] = useState("#1c1c1c")
 const setEmailColor = (bgColor, fgColor) => {
     setEmailBGColor(bgColor);
     setEmailFGColor(fgColor);
@@ -45,22 +45,22 @@ const setEmailColor = (bgColor, fgColor) => {
                 
                 <div className = "contact-link-buttons">
                     <div className = "site-logo">
-                    <Img fluid={data.file.childImageSharp.fluid} alt="Matt Bolles"/>
+                    <Img fluid={data.file.childImageSharp.fluid} alt="Official Website of Matt Bolles"/>
                     </div>
                     
                     <div className = "contact-link-button-individual" 
                     onMouseEnter={() => setGitHubColor("#73ceff", "#b948e8")}
-                    onMouseOut={() => {setGitHubColor("#ffffff", "#000000")}}>
+                    onMouseOut={() => {setGitHubColor("#ffffff", "#1c1c1c")}}>
                         <SocialIcon url="http://github.com/mattbolles" bgColor = {gitHubBGColor} fgColor = {gitHubFGColor} style={{height: 45, width: 45}}/>
                     </div>
                     <div className = "contact-link-button-individual" 
                     onMouseEnter={() => setLinkedInColor("#73ceff", "#b948e8")}
-                    onMouseOut={() => {setLinkedInColor("#ffffff", "#000000")}}>
+                    onMouseOut={() => {setLinkedInColor("#ffffff", "#1c1c1c")}}>
                         <SocialIcon url="https://linkedin.com/in/mattrbolles/" bgColor = {linkedInBGColor} fgColor = {linkedInFGColor} style={{height: 45, width: 45}}/>
                     </div>
                     <div className = "contact-link-button-individual" 
                     onMouseEnter={() => setEmailColor("#73ceff", "#b948e8")}
-                    onMouseOut={() => {setEmailColor("#ffffff", "#000000")}}>
+                    onMouseOut={() => {setEmailColor("#ffffff", "#1c1c1c")}}>
                         <SocialIcon url="mailto:matt@mattrbolles.com" bgColor = {emailBGColor} fgColor = {emailFGColor} style={{height: 45, width: 45}}/>
                     </div>
                 </div>
