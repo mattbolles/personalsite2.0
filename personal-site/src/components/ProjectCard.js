@@ -4,20 +4,18 @@ import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
 import React from "react";
 import SectionHeading from "../components/SectionHeading";
 import { MdDevices }from '@react-icons/all-files/md/MdDevices'
-const ProjectCard = ({Project}) => {
-    const imageURL = Project.image;
-
-
-
+const ProjectCard = (projectData) => {
+  const image= projectData.image;
 
   return (
-    <div>
-        <div>{Project.name}</div>
-        <div>{Project.description}</div>
-        <div>{Project.link}</div>
-        <div>{Project.technologies}</div>
-        <div><GatsbyImage image="../images/site-logo.png" alt={Project.name} /></div>
-        <div>{imageURL}</div>
+    <div className = "project-card">
+        <div>{projectData.name}</div>
+        <div>{projectData.description}</div>
+        <div>{projectData.link}</div>
+        <div>{projectData.technologies}</div>
+        <div><StaticImage image= {projectData.image} alt={projectData.name} /></div>
+        <div><StaticImage image= {"../images/sfsu-logo.png"} alt={projectData.name} /></div>
+        <div>{image}</div>
     </div>
   );
 };

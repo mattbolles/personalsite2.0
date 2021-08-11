@@ -16,27 +16,9 @@ module.exports = {
         name: 'Contact',
         link: '#contact'
       }
-    ],
-    projectData:[
-      {
-        name: "Test Project",
-        description: "Test Project Description",
-        link: "http://github.com/mattbolles",
-        image: "../images/projects/testproject.png",
-        technologies: "React, Test, Cool"
-      }
-  ]
+    ]
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-image`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -49,6 +31,44 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/site-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
+    },
+     // You can have multiple instances of this plugin
+    // to read source nodes from different locations on your
+    // filesystem.
+    //
+    // The following sets up the Jekyll pattern of having a
+    // "pages" directory for Markdown files and a "data" directory
+    // for `.json`, `.yaml`, `.csv`.
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
       },
     },
     `gatsby-plugin-gatsby-cloud`,
