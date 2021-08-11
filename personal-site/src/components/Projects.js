@@ -3,7 +3,6 @@ import Img from "gatsby-image";
 import React from "react";
 import SectionHeading from "../components/SectionHeading";
 import { MdDevices }from '@react-icons/all-files/md/MdDevices'
-import ProjectCard from "./ProjectCard";
 import { StaticImage } from "gatsby-plugin-image";
 import { GatsbyImage } from "gatsby-plugin-image";
 
