@@ -45,13 +45,14 @@ const setGitHubColor = (bgColor, fgColor) => {
             <div className = "project-card-info">
               <div className = "project-card-title" style = {{marginBottom: '.75rem'}}><h2>{node.name}</h2></div>
               <div>{node.description}</div>
-                <div className = "project-card-github-link" 
+              <div>{node.technologies}</div>
+              <div className = "project-card-github-link" 
                     onMouseEnter={() => setGitHubColor("#73ceff", "#b948e8")}
                     onMouseOut={() => {setGitHubColor("#ffffff", "#1c1c1c")}}>
                       <a href ={node.link} target="_blank">View on GitHub</a>
                       <SocialIcon url={node.link} bgColor = {gitHubBGColor} fgColor = {gitHubFGColor} style={{height: 25, width: 25, margin: '.25rem'}}/>
-                </div>
-              <div>{node.technologies}</div>
+              </div>
+              
             </div>
           </div>
           ))}

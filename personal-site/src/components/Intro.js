@@ -11,7 +11,7 @@ const Intro = () => {
             <div className = "site-intro">
                 <div className = "site-intro-text">
                     <div className = "gradient-text">
-                        <h1>Hi, My name is Matt.</h1>
+                        <h1>Hi, my name is Matt.</h1>
                     </div>
                     <div className="site-intro-animation">
                         <div className="site-intro-animation-container">

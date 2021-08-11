@@ -12,5 +12,33 @@
     "link": "http://github.com/mattbolles",
     "image": "../images/projects/test2.png",
     "technologies": "React, Test, Cool"
+  },
+  {
+    "name": "Test Project 3",
+    "description": "Test Project Description 3",
+    "link": "http://github.com/mattbolles",
+    "image": "../images/site-logo.png",
+    "technologies": "React, Test, Cool"
+  },
+  {
+    "name": "Test Project 4",
+    "description": "Test Project Description 4",
+    "link": "http://github.com/mattbolles",
+    "image": "../images/site-icon.png",
+    "technologies": "React, Test, Cool"
+  },
+  {
+    "name": "Test Project 5",
+    "description": "Test Project Description",
+    "link": "http://github.com/mattbolles",
+    "image": "../images/site-logo.png",
+    "technologies": "React, Test, Cool"
+  },
+  {
+    "name": "Test Project 6",
+    "description": "Test Project Description",
+    "link": "http://github.com/mattbolles",
+    "image": "../images/site-icon.png",
+    "technologies": "React, Test, Cool"
   }
 ] 
