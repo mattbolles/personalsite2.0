@@ -1,17 +1,17 @@
 [
   {
-    "name": "Test Project",
-    "description": "Test Project Description 2",
-    "link": "http://github.com/mattbolles",
-    "image": "../images/test.jpg",
-    "technologies": "React, Test, Cool"
+    "name": "Matt Bolles' Personal Website",
+    "description": "This website - meta, isn't it? Created to serve as a portfolio and online resume. Always under construction to make it better, so check back soon!",
+    "link": "https://github.com/mattbolles/personalsite2.0",
+    "image": "../images/projects/personalsite.png",
+    "technologies": "GatsbyJS, ReactJS, HTML, CSS"
   },
   {
-    "name": "Test Project 2",
-    "description": "Test Project Description 2",
-    "link": "http://github.com/mattbolles",
-    "image": "../images/projects/test2.png",
-    "technologies": "React, Test, Cool"
+    "name": "Momentus",
+    "description": "Full stack social media application with a focus on giving creatives robust control over how they display and organize their work. Developed with a team of 5 other students led by myself.",
+    "link": "https://github.com/mattbolles/momentus",
+    "image": "../images/site-logo.png",
+    "technologies": "JavaScript, ReactJS, ExpressJS, NodeJS, Redux, Bootstrap, MySQL, AWS, Heroku, HTML, CSS"
   },
   {
     "name": "Test Project 3",

@@ -18,7 +18,7 @@ const Projects = () => {
           name
           image {
                 childImageSharp {
-                  gatsbyImageData(width: 450, layout: CONSTRAINED, quality: 100)
+                  gatsbyImageData(width: 500, height: 500, layout: CONSTRAINED, quality: 100)
                 }
               }
         }
@@ -41,16 +41,19 @@ const setGitHubColor = (bgColor, fgColor) => {
         <div className = "projects">
           {data.allProjectsJson.edges.map(({ node }, index) => (
           <div className = "project-card" key = {index}>
-            <div className = "project-card-image"><a href ={node.link} target="_blank"><GatsbyImage image= {node.image.childImageSharp.gatsbyImageData} alt={node.name} /></a></div>
+            <div className = "project-card-image">
+              <a href ={node.link} target="_blank"><GatsbyImage image= {node.image.childImageSharp.gatsbyImageData} alt={node.name}/></a>
+            </div>
             <div className = "project-card-info">
-              <div className = "project-card-title" style = {{marginBottom: '.75rem'}}><h2>{node.name}</h2></div>
+              <div className = "project-card-title" style = {{marginBottom: '.75rem'}}>
+                <h2><a href ={node.link} target="_blank">{node.name}</a></h2></div>
               <div>{node.description}</div>
+              <hr></hr>
               <div>{node.technologies}</div>
-              <div className = "project-card-github-link" 
-                    onMouseEnter={() => setGitHubColor("#73ceff", "#b948e8")}
-                    onMouseOut={() => {setGitHubColor("#ffffff", "#1c1c1c")}}>
-                      <a href ={node.link} target="_blank">View on GitHub</a>
-                      <SocialIcon url={node.link} bgColor = {gitHubBGColor} fgColor = {gitHubFGColor} style={{height: 25, width: 25, margin: '.25rem'}}/>
+              <hr></hr>
+              <div className = "project-card-github-link">
+                <a href ={node.link} target="_blank">View on GitHub</a>
+                <SocialIcon url={node.link} bgColor = "#e8e8e8" fgColor = "#1c1c1c" style={{height: 25, width: 25, margin: '.25rem'}}/>
               </div>
               
             </div>

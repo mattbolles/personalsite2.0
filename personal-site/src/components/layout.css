@@ -167,7 +167,7 @@ figure {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
-hr {
+/* hr {
   box-sizing: content-box;
   overflow: visible;
   margin-left: 0;
@@ -181,7 +181,15 @@ hr {
   background: hsla(0, 0%, 0%, 0.2);
   border: none;
   height: 1px;
+} */
+hr {
+  color: #a6a6a6;
+  overflow: visible;
+  text-align: center;
+  border: 1px solid #a6a6a6;
+  margin: .75rem;
 }
+
 button,
 input,
 optgroup,
