@@ -681,6 +681,11 @@ pre tt:after {
 
 
 a:link {
+  color: #e8e8e8;
+  text-decoration: none;
+}
+
+a:hover {
   color: #f9e8ff;
   text-decoration: none;
 }

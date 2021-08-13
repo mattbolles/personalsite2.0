@@ -10,35 +10,35 @@
     "name": "Momentus",
     "description": "Full stack social media application with a focus on giving creatives robust control over how they display and organize their work. Developed with a team of 5 other students led by myself.",
     "link": "https://github.com/mattbolles/momentus",
-    "image": "../images/site-logo.png",
+    "image": "../images/projects/momentus1.png",
     "technologies": "JavaScript, ReactJS, ExpressJS, NodeJS, Redux, Bootstrap, MySQL, AWS, Heroku, HTML, CSS"
   },
   {
-    "name": "Test Project 3",
-    "description": "Test Project Description 3",
-    "link": "http://github.com/mattbolles",
-    "image": "../images/site-logo.png",
-    "technologies": "React, Test, Cool"
+    "name": "ItemSpot",
+    "description": "One page ReactJS classified listings application with microservices backend. Allows users to post and browse listings, as well as send inquiries about listings. Developed with team of 3 other students.",
+    "link": "http://github.com/mattbolles/itemspot",
+    "image": "../images/projects/itemspot.png",
+    "technologies": "JavaScript, ReactJS, NodeJS, Docker, Kafka, MongoDB, Redis, HTML, CSS"
   },
   {
-    "name": "Test Project 4",
-    "description": "Test Project Description 4",
-    "link": "http://github.com/mattbolles",
-    "image": "../images/site-icon.png",
-    "technologies": "React, Test, Cool"
+    "name": "PicPost",
+    "description": "Simple photo posting web application, allowing users to post, comment on, and search for photos.",
+    "link": "http://github.com/mattbolles/picpost",
+    "image": "../images/projects/picpost.png",
+    "technologies": "JavaScript, NodeJS, ExpressJS, Handlebars, HTML, CSS"
   },
   {
-    "name": "Test Project 5",
-    "description": "Test Project Description",
-    "link": "http://github.com/mattbolles",
-    "image": "../images/site-logo.png",
-    "technologies": "React, Test, Cool"
+    "name": "The Trip",
+    "description": "2D side-scrolling platformer game, made as term project for my software engineering class. Graphics, design, and music created by me.",
+    "link": "http://github.com/mattbolles/thetrip",
+    "image": "../images/projects/thetrip.png",
+    "technologies": "Java, LibGDX"
   },
   {
-    "name": "Test Project 6",
-    "description": "Test Project Description",
-    "link": "http://github.com/mattbolles",
-    "image": "../images/site-icon.png",
-    "technologies": "React, Test, Cool"
+    "name": "Tank Wars",
+    "description": "Top down 2D two-player tank fighting game, developed as part of my software engineering class.",
+    "link": "http://github.com/mattbolles/tankwars",
+    "image": "../images/projects/tankwars.png",
+    "technologies": "Java"
   }
 ] 
