@@ -1,23 +1,12 @@
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
+import { StaticImage } from "gatsby-plugin-image";
 import React, { useState } from "react";
 import { SocialIcon } from 'react-social-icons';
 
 /* TODO: Make clicking logo take user to top of page */
 
 const NavBar = () => {
-  const data = useStaticQuery(graphql`
-  query {
-    file(relativePath: { eq: "site-logo.png" }) {
-      childImageSharp {
-        fluid(maxHeight: 100, quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`);
-
 // change color of social media buttons when user hovers over
 const [gitHubBGColor, setGitHubBGColor] = useState("#e8e8e8")
 const [gitHubFGColor, setGitHubFGColor] = useState("#1c1c1c")
@@ -45,7 +34,7 @@ const setEmailColor = (bgColor, fgColor) => {
                 
                 <div className = "contact-link-buttons">
                     <div className = "site-logo">
-                    <Img fluid={data.file.childImageSharp.fluid} alt="Official Website of Matt Bolles"/>
+                    <StaticImage src="../images/site-logo-initials.png" alt="Official Website of Matt Bolles" loading="eager" objectFit="contain" layout="constrained" height="45"/>
                     </div>
                     
                     <div className = "contact-link-button-individual" >

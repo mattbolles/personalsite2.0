@@ -969,11 +969,13 @@ a:visited {
 
 .site-logo {
   max-width: 17vw;
+  max-height: 6vh;
   padding: .5rem;
   margin-right: auto;
   flex: 1;
   justify-content: left;
 }
+
 
 .site-title {
   max-width: 100vw;
