@@ -1,0 +1,34 @@
+[
+    {
+        "skill": "Java",
+        "color": "#ffde82"
+    },
+    {
+        "skill": "Python",
+        "color": "#96ffcd"
+    },
+    {
+        "skill": "JavaScript",
+        "color": "#b8ceff"
+    },
+    {
+        "skill": "React",
+        "color": "#dfc0fc"
+    },
+    {
+        "skill": "NodeJS",
+        "color": "#ffe0f8"
+    },
+    {
+        "skill": "ExpressJS",
+        "color": "#ffde82"
+    },
+    {
+        "skill": "HTML",
+        "color": "#96ffcd"
+    },
+    {
+        "skill": "CSS",
+        "color": "#b8ceff"
+    }
+]

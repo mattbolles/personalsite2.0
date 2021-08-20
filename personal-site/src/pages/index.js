@@ -5,6 +5,7 @@ import AboutMe from "../components/AboutMe"
 import Education from "../components/Education"
 import Intro from "../components/Intro"
 import NavBar from "../components/NavBar"
+import Skills from "../components/Skills"
 import Projects from "../components/Projects"
 
 const IndexPage = () => (
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <Intro />
     <AboutMe />
     <Education />
+    <Skills />
     <Projects />
   </Layout>
 )

@@ -1017,6 +1017,46 @@ a:visited {
 .project-card img {
   border-radius: 8px 8px 0% 0%;
 }
+
 .project-card-info {
   padding: 1rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  justify-content: space-evenly;
+}
+
+.skill-card-selected {
+  border-style: solid;
+  border-color: #2e2e2e;
+  border-width: 1px;
+  border-radius: 8px;
+  color: #1c1c1c;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin: 1rem;
+  box-shadow: 0px 2px 5px 2px #0C0C0C;
+  transition: all 0.3s ease 0s;
+  transform: scale(1.1);
+}
+
+.skill-card-not-selected {
+  border-style: solid;
+  border-color: #2e2e2e;
+  border-width: 1px;
+  border-radius: 8px;
+  background-color: #2e2e2e;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin: 1rem;
+  box-shadow: 0px 2px 5px 2px #0C0C0C;
+  transition: all 0.3s ease 0s;
 }
