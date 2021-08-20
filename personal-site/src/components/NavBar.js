@@ -1,8 +1,7 @@
-import { graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
 import { StaticImage } from "gatsby-plugin-image";
 import React, { useState } from "react";
 import { SocialIcon } from 'react-social-icons';
+import Menu from "./Menu";
 
 /* TODO: Make clicking logo take user to top of page */
 
@@ -26,6 +25,7 @@ const setEmailColor = (bgColor, fgColor) => {
     setEmailBGColor(bgColor);
     setEmailFGColor(fgColor);
 }
+const [navBarOpen, setNavBarOpen] = useState(false);
 
   return ( 
     <section id="nav-bar">
@@ -33,6 +33,7 @@ const setEmailColor = (bgColor, fgColor) => {
             <div className = "header-box">
                 
                 <div className = "contact-link-buttons">
+                  <Menu />
                     <div className = "site-logo">
                     <StaticImage src="../images/site-logo-initials.png" alt="Official Website of Matt Bolles" loading="eager" objectFit="contain" layout="constrained" height="45"/>
                     </div>

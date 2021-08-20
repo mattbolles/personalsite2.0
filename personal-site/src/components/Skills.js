@@ -2,8 +2,6 @@ import { graphql, useStaticQuery } from "gatsby";
 import React, { useState } from "react";
 import SectionHeading from "../components/SectionHeading";
 import { BsPersonCheckFill }from '@react-icons/all-files/bs/BsPersonCheckFill'
-import { GatsbyImage } from "gatsby-plugin-image";
-import { SocialIcon } from 'react-social-icons';
 
 
 const Skills = () => {
@@ -31,7 +29,7 @@ const [selectedSkill, setSelectedSkill] = useState(-1);
           {data.allSkillsJson.edges.map(({ node }, index) => (
           <div className = "skill-card" key = {index} onMouseEnter={()=> setSelectedSkill(index)} onMouseLeave={() => setSelectedSkill(-1)}>
             {
-            selectedSkill == index ? 
+            selectedSkill === index ? 
             <div className = "skill-card-selected" style = {{backgroundColor: node.color}}>
                 {node.skill}
             </div>
