@@ -729,7 +729,7 @@ a:visited {
   margin-right: 1.5vw;
 }
 .contact-link-button-individual {
-  padding: 1rem;
+  padding: .6rem;
 }
 
 
@@ -804,47 +804,45 @@ a:visited {
       right: 0;
     }
 
-    .site-intro-animation-container:after, .site-intro-animation-container:before {
-      position: absolute;
-      top: 0;
-      font-size: 42px;
-      line-height: 40px;
-      
-      -webkit-animation-name: terminal;
-      -webkit-animation-duration: 2s;
-      -webkit-animation-iteration-count: infinite;
-      -webkit-animation-direction: alternate;
-      animation-name: terminal;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-    }
+.site-intro-animation-container:after, .site-intro-animation-container:before {
+  position: absolute;
+  top: 0;
+  font-size: 42px;
+  line-height: 40px;
+  
+  -webkit-animation-name: terminal;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-name: terminal;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 
-    .site-intro-animation-container-text {
-      display: inline;
-      float: left;
-      padding-left: 120px;
-      margin: 0;
-    }
-
-    .site-intro-animation-container-list {
-      margin-top: 0;
-      padding-left: 175px;
-      text-align: left;
-      list-style: none;
-      
-      -webkit-animation-name: change;
-      -webkit-animation-duration: 12s;
-      -webkit-animation-iteration-count: infinite;
-      animation-name: change;
-      animation-duration: 12s;
-      animation-iteration-count: infinite;
-    }
-
-    .site-intro-animation-container-list-item {
-        line-height:40px;
-        margin:0;
-    }
+.site-intro-animation-container-text {
+  display: inline;
+  float: left;
+  padding-left: 120px;
+  margin: 0;
+}
+.site-intro-animation-container-list {
+  margin-top: 0;
+  padding-left: 175px;
+  text-align: left;
+  list-style: none;
+  
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 12s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+.site-intro-animation-container-list-item {
+    line-height:40px;
+    margin:0;
+}
 
 @-webkit-keyframes opacity {
   0%, 100% {opacity:0;}
@@ -910,11 +908,12 @@ a:visited {
 }
 
 .nav-bar {
-  height: 7vh;
+  max-height: 4vh;
   position: fixed;
   top: 0;
   width: 100vw;
   z-index:1;
+  opacity: 95%;
 }
 
 .fade-in-1 {
@@ -969,9 +968,9 @@ a:visited {
 }
 
 .site-logo {
-  max-width: 20vw;
+  max-width: 17vw;
   padding: .5rem;
-  margin-right: 63vw;
+  margin-right: auto;
   flex: 1;
   justify-content: left;
 }
