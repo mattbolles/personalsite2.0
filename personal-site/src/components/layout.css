@@ -789,12 +789,12 @@ a:visited {
     font-weight: 600;
     overflow: hidden;
     height: 40px;
-    padding: 0 40px;
+    padding: 0 65px;
 }
 
 
 .site-intro-animation-container:before {
-      content: 'matt:~';
+      content: 'matt:~$';
       left: 0;
 }
 
@@ -974,6 +974,7 @@ a:visited {
   margin-right: auto;
   flex: 1;
   justify-content: left;
+  transition: all 0.3s ease 0s;
 }
 
 
