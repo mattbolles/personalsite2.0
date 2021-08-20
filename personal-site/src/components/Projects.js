@@ -27,12 +27,8 @@ const Projects = () => {
   }
 `);
 
-const [gitHubBGColor, setGitHubBGColor] = useState("#ffffff")
-const [gitHubFGColor, setGitHubFGColor] = useState("#1c1c1c")
-const setGitHubColor = (bgColor, fgColor) => {
-    setGitHubBGColor(bgColor);
-    setGitHubFGColor(fgColor);
-}
+// keep track of which one is hovered over - upon hover, magnify project card a bit
+const [selectedProject, setSelectedProject] = useState(-1);
  
   return (
     <section id="projects">
@@ -40,23 +36,48 @@ const setGitHubColor = (bgColor, fgColor) => {
         <div className = "section-text">
         <div className = "projects">
           {data.allProjectsJson.edges.map(({ node }, index) => (
-          <div className = "project-card" key = {index}>
-            <div className = "project-card-image">
-              <a href ={node.link} target="_blank"><GatsbyImage image= {node.image.childImageSharp.gatsbyImageData} alt={node.name}/></a>
-            </div>
-            <div className = "project-card-info">
-              <div className = "project-card-title" style = {{marginBottom: '.75rem'}}>
-                <h2><a href ={node.link} target="_blank">{node.name}</a></h2></div>
-              <div>{node.description}</div>
-              <hr></hr>
-              <div>{node.technologies}</div>
-              <hr></hr>
-              <div className = "project-card-github-link">
-                <a href ={node.link} target="_blank">View on GitHub</a>
-                <SocialIcon url={node.link} bgColor = "#e8e8e8" fgColor = "#1c1c1c" style={{height: 25, width: 25, margin: '.25rem'}}/>
+          <div className = "project-card" key = {index} onMouseEnter={()=> setSelectedProject(index)} onMouseLeave={() => setSelectedProject(-1)}>
+            {
+            selectedProject == index ? 
+            <div className = "project-card-selected">
+              <div className = "project-card-image" >
+                <a href ={node.link} target="_blank"><GatsbyImage image= {node.image.childImageSharp.gatsbyImageData} alt={node.name}/></a>
               </div>
-              
+              <div className = "project-card-info">
+                <div className = "project-card-title" style = {{marginBottom: '.75rem'}}>
+                  <h2><a href ={node.link} target="_blank">{node.name}</a></h2></div>
+                <div>{node.description}</div>
+                <hr></hr>
+                <div>{node.technologies}</div>
+                <hr></hr>
+                <div className = "project-card-github-link">
+                  <a href ={node.link} target="_blank">View on GitHub</a>
+                  <SocialIcon url={node.link} bgColor = "#e8e8e8" fgColor = "#1c1c1c" style={{height: 25, width: 25, margin: '.25rem'}}/>
+                </div>
+              </div>
             </div>
+            
+            :
+
+            <div className = "project-card-not-selected">
+              <div className = "project-card-image">
+                <a href ={node.link} target="_blank"><GatsbyImage image= {node.image.childImageSharp.gatsbyImageData} alt={node.name}/></a>
+              </div>
+              <div className = "project-card-info">
+                <div className = "project-card-title" style = {{marginBottom: '.75rem'}}>
+                  <h2><a href ={node.link} target="_blank">{node.name}</a></h2></div>
+                <div>{node.description}</div>
+                <hr></hr>
+                <div>{node.technologies}</div>
+                <hr></hr>
+                <div className = "project-card-github-link">
+                  <a href ={node.link} target="_blank">View on GitHub</a>
+                  <SocialIcon url={node.link} bgColor = "#e8e8e8" fgColor = "#1c1c1c" style={{height: 25, width: 25, margin: '.25rem'}}/>
+                </div>
+              </div>
+            </div>
+            }
+              
           </div>
           ))}
         </div>
