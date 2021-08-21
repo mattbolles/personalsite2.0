@@ -1,0 +1,22 @@
+[
+    {
+        "title": "About Me",
+        "link": "#about-me",
+        "color": "#ffde82"
+    },
+    {
+        "title": "Education",
+        "link": "#education",
+        "color": "#96ffcd"
+    },
+    {
+        "title": "Skills",
+        "link": "#skills",
+        "color": "#b8ceff"
+    },
+    {
+        "title": "Projects",
+        "link": "#projects",
+        "color": "#dfc0fc"
+    }
+]
