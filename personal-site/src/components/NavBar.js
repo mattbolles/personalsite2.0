@@ -25,7 +25,7 @@ const setEmailColor = (bgColor, fgColor) => {
     setEmailBGColor(bgColor);
     setEmailFGColor(fgColor);
 }
-const [navBarOpen, setNavBarOpen] = useState(false);
+const [logoHovered, setLogoHovered] = useState(false);
 
   return ( 
     <section id="nav-bar">
@@ -35,7 +35,7 @@ const [navBarOpen, setNavBarOpen] = useState(false);
                 <div className = "contact-link-buttons">
                   <Menu />
                     <div className = "site-logo">
-                    <StaticImage src="../images/site-logo-initials.png" alt="Official Website of Matt Bolles" loading="eager" objectFit="contain" layout="constrained" height="45"/>
+                    <StaticImage src="../images/site-logo-initials.png" alt="Official Website of Matt Bolles" loading="eager" objectFit="contain" layout="constrained" width="90"/>
                     </div>
                     
                     <div className = "contact-link-button-individual" >
